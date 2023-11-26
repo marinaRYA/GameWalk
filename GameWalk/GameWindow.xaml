@@ -1,0 +1,27 @@
+﻿<Window x:Class="GameWalk.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameWalk"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="435" Width="435"
+        MaxHeight="435" MaxWidth="435" MinHeight="435" MinWidth="435">
+    <Grid>
+        <Canvas Name="gameCanvas" Width="435" Height="435">
+            <Image Height="430" Canvas.Left="-2" Source="/dangion.png" Stretch="Fill" Canvas.Top="-3" Width="430"/>
+            <Image x:Name="playerImage" Height="45" Canvas.Left="210" Source="/character.png" Stretch="Fill" Canvas.Top="195" Width="25"  Panel.ZIndex="3"/>
+            <Ellipse x:Name="circle1" Width="600" Height="596" Fill="Black" Opacity="0.85" 
+                     Canvas.Left="464" Canvas.Top="40" Panel.ZIndex="2"/>
+            <Ellipse x:Name="circle2" Width="600" Height="600" Fill="Black" Opacity="0.85" 
+                     Canvas.Left="494" Canvas.Top="-287" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"/>
+            <Ellipse x:Name="circle3" Width="600" Height="598" Fill="Black" Opacity="0.85" 
+                     Canvas.Left="494" Canvas.Top="68" Panel.ZIndex="2"/>
+            <Ellipse x:Name="circle4" Width="600" Height="600" Fill="Black" Opacity="0.85" 
+                     Canvas.Left="468" Canvas.Top="-280" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"/>
+            <Image x:Name="bImage" Canvas.Left="468" Canvas.Top="-280" Width="20" Height="25" Source="/heart.png" Stretch="Fill" Panel.ZIndex="1" />
+
+        </Canvas>
+      
+    </Grid>
+</Window>
